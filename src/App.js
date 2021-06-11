@@ -1,8 +1,10 @@
+import Header from "./components/Header";
+import Icon from "./Icon"
 
 function App() {
   return (
     <>
-      <h1>Hello!</h1>
+      <Header headingText="Good morning Akila" interactionContent="<Icon />" />
     </>
   );
 }
