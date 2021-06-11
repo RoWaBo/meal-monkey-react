@@ -1,4 +1,5 @@
 import { FaShoppingCart } from "react-icons/fa";
+import Icon from "./Icon"
 
 const Icon = () => {
     return ( 
