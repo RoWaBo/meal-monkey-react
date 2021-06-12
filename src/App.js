@@ -1,9 +1,11 @@
-import Header from "./components/Header";
+import Header from "./components/Welcome-header";
 
 function App() {
   return (
     <>
-      <Header headingText="Good morning Akila" interactionContent="" />
+      <div className="wrapper">
+        <Header userName="Akila!" faIconClassName="fas fa-shopping-cart" />
+      </div>
     </>
   );
 }
