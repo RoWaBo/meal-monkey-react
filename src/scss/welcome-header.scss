@@ -1,0 +1,15 @@
+
+.welcome-header {
+    display: flex;
+    align-items: center;
+    color: var(--cFontMedium);
+
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: auto;    
+    }
+    &__icon {
+        font-size: 1.1rem;
+    }
+}
