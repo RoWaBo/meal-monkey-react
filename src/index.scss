@@ -23,6 +23,11 @@ ul{
 }
 .wrapper {
     padding: 1rem;
+    overflow-x: hidden;
+
+    & > :nth-child(1) {
+        margin-bottom: 1rem;
+    }
 }
 
 // VARIABLES

@@ -1,13 +1,12 @@
+import "../scss/category-card.scss"
 
-const CategoryCard = ({ heading }) => {
+const CategoryCard = ({ imageUrl, heading }) => {
     return ( 
         <section className="card">
             <div className="card__img-container">
-                <img src="https://via.placeholder.com/88" alt="placeholder image" className="card__img" />
+                <img src={ imageUrl } alt="placeholder" className="card__img" />
             </div>
-            <div className="card__heading-container">
-                <h3 className="card__heading">{ heading }</h3>
-            </div>
+            <h3 className="card__heading">{ heading }</h3>
         </section>
      );
 }
