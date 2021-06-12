@@ -1,0 +1,18 @@
+
+.card {
+    min-width: 88px;
+    min-height: 113px;
+    
+    &__img-container {
+        min-height: 88px;
+        min-width: 88px;
+    }
+    &__img {
+        border-radius: 10px;
+    }
+    &__heading {
+        text-align: center;
+        font-size: 14px;
+        padding-top: .3rem;
+    }
+}

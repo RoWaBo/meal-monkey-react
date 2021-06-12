@@ -1,0 +1,11 @@
+.swipable-container {
+    display: flex;
+    position: relative;
+
+    & > :not(:last-of-type) {
+        margin-right: 1rem;
+    }
+    & > * {
+        pointer-events: none;
+    }
+}
