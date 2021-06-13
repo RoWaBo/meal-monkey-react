@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="wrapper">
-        <Header userName="Akila!" actionText="">
+        <Header userName="Akila!">
             <FaShoppingCart style={{ fontSize:"1.2rem" }} />  
         </Header>
       <SwipableContainer>
