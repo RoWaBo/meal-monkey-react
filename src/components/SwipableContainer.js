@@ -12,7 +12,6 @@ const SwipableContainer = ({ children }) => {
         } else {
             startX = e.touches[0].clientX     
         }
-        console.log(e.target);
     }
 
     function touchMove(e) {

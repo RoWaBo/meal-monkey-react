@@ -1,5 +1,5 @@
 
-.welcome-header {
+.header {
     display: flex;
     align-items: center;
     color: var(--cFontMedium);
@@ -9,7 +9,7 @@
         font-weight: 400;
         margin-right: auto;    
     }
-    &__icon {
-        font-size: 1.1rem;
-    }
+    // &__actionElmnt {
+    //     font-size: 1.1rem;
+    // }
 }
