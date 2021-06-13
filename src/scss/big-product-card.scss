@@ -1,0 +1,38 @@
+
+.big-product-card {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 193px;
+    }
+    &__text-container {
+        margin: .5rem 1rem 0;
+    }
+    &__heading {
+        font-size: 16px;
+        font-weight: 700;
+        color: #4A4B4D;
+    }
+    &__info-container {
+        display: flex;
+        & > :first-child {
+            margin-right: .5rem;
+        }
+    }
+    &__info-text {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #B6B7B7;
+    }
+    &__info-icon {
+        color: #FC6011;
+    }
+}
