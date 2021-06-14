@@ -7,7 +7,9 @@ const BigProductCard = ({ img, heading, alt, children }) => {
             <img src={img} alt={alt} className="big-product-card__img" />
             <div className="big-product-card__text-container">
                 <h2 className="big-product-card__heading">{heading}</h2>
-                { children }
+                <div className="big-product-card__description">
+                    { children }    
+                </div>
             </div>
         </section>
     );

@@ -20,4 +20,10 @@
         font-weight: 700;
         color: #4A4B4D;
     }
+    &__description {
+        display: flex;
+        & > :not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
 }
