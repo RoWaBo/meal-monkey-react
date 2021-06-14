@@ -12,7 +12,7 @@ const TodMessage = () => {
     }
 
     return ( 
-        <>Good { timeOfDay() } </>
+        timeOfDay()
      );
 }
  

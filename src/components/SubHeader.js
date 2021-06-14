@@ -4,7 +4,7 @@ const SubHeader = ({ heading, actionText }) => {
     const style = {
         subHeader: {
             display: "flex",
-            alignItems: "center"
+            alignItems: "center",
         },
         heading: {
             color: "#4a4b4d",

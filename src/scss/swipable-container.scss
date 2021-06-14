@@ -1,6 +1,7 @@
 .swipable-container {
     display: flex;
     position: relative;
+    width: fit-content;
 
     & > :not(:last-of-type) {
         margin-right: 1rem;

@@ -11,7 +11,7 @@ function App() {
     <>
       <div className="wrapper">
         <Header userName="Akila!">
-          <FaShoppingCart style={{ fontSize:"1.4rem" }} />
+          <FaShoppingCart style={{ fontSize: "1.4rem" }} />
         </Header>
 
         <SwipableContainer>
@@ -28,13 +28,12 @@ function App() {
           <BigProductCard img="https://source.unsplash.com/featured/?bakery" heading="Bakes by Tella" store="Café" category="Western Food" />
         </div>
 
-        <div className="medium-products-container" style={{ display: "grid", gap: "1.5rem" }}>
-          <SubHeader heading="Most Popular" actionText="View all" />
-          <SwipableContainer>
-            <MediumProductCard img="https://source.unsplash.com/featured/?pizza_slice" heading="Café De Bambaa" store="Café" category="Western Food" />
-            <MediumProductCard img="https://source.unsplash.com/featured/?burger" heading="Burger by Bella" store="Café" category="Western Food" />
-          </SwipableContainer>
-        </div>
+        <SubHeader heading="Most Popular" actionText="View all" />
+        <SwipableContainer>
+          <MediumProductCard img="https://source.unsplash.com/featured/?pizza_slice" heading="Café De Bambaa" store="Café" category="Western Food" />
+          <MediumProductCard img="https://source.unsplash.com/featured/?burger" heading="Burger by Bella" store="Café" category="Western Food" />
+        </SwipableContainer>
+
       </div>
     </>
   );
