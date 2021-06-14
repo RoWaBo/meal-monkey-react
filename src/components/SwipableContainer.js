@@ -5,7 +5,6 @@ const SwipableContainer = ({ children }) => {
     let currentX
 
     function touchStart(e) {
-        console.log(e.target);
         let swipeContainerX = parseInt(e.target.style.left) || 0
 
         if (swipeContainerX !== 0) {

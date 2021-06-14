@@ -20,19 +20,4 @@
         font-weight: 700;
         color: #4A4B4D;
     }
-    &__info-container {
-        display: flex;
-        & > :first-child {
-            margin-right: .5rem;
-        }
-    }
-    &__info-text {
-        display: flex;
-        align-items: center;
-        font-size: 12px;
-        color: #B6B7B7;
-    }
-    &__info-icon {
-        color: #FC6011;
-    }
 }
