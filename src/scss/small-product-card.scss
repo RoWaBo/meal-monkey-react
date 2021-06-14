@@ -1,0 +1,32 @@
+
+.small-product-card {
+    display: flex;
+
+    &__img {
+        border-radius: 10px;
+        object-fit: cover;
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+        min-height: 75px;
+    }
+    &__text-container {
+        margin-left: 1rem;
+    }
+    &__heading {
+        font-size: 18px;
+        font-weight: 700;
+        color: #4A4B4D;
+    }
+    // &__info-container {
+    // }
+    &__info-text {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #B6B7B7;
+    }
+    &__info-icon {
+        color: #FC6011;
+    }
+}
