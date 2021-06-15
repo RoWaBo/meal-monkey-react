@@ -6,11 +6,13 @@ import SubHeader from "./components/SubHeader";
 import BigProductCard from "./components/BigProductCard";
 import MediumProductCard from "./components/MediumProductCard";
 import SmallProductCard from "./components/SmallProductCard";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <>
       <div className="wrapper">
+
         <Header userName="Akila!">
           <FaShoppingCart style={{ fontSize: "1.4rem" }} />
         </Header>
@@ -42,6 +44,8 @@ function App() {
           <SmallProductCard img="https://source.unsplash.com/featured/?italian,pizza" heading="Pizza Rush Hour" store="Café" category="Italian Food" />
         </div>
         
+        <Counter />
+          
       </div>
     </>
   );
