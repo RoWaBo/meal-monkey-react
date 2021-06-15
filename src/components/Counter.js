@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 
 const Counter = () => {
 
+    // STATES
     const [count, setCount] = useState(parseInt(localStorage.getItem("myCount")) || 0);
 
-    useEffect(() => {
-        localStorage.setItem("myCount", count)
-    }, [count]);
+    // EFFECTS
+    useEffect(() => localStorage.setItem("myCount", count), [count]);
 
+    // FUNCTIONS
     let countUp = () => count < 15 && setCount(count + 1)
-
     let countDown = () => count > 0 && setCount(count - 1) 
 
     return (
