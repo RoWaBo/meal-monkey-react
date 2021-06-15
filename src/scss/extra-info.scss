@@ -1,0 +1,13 @@
+.extra-info {
+    display: flex;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #B6B7B7;
+    }
+    &__icon {
+        color: #FC6011;
+    }    
+}

@@ -4,12 +4,15 @@ import SwipableContainer from "./components/SwipableContainer";
 import Header from "./components/Header";
 import { FaShoppingCart } from "react-icons/fa";
 import SubHeader from "./components/SubHeader";
-import BigProductCard from "./components/BigProductCard";
+import FullWidthImgSection from "./components/FullWidthImgSection";
 import MediumProductCard from "./components/MediumProductCard";
 import SmallProductCard from "./components/SmallProductCard";
+import Rating from "./components/Rating";
+import ExtraInfo from "./components/ExtraInfo";
 import Counter from "./components/Counter";
 import TheMeal from "./components/TheMeal";
 import Meals from "./components/Meals";
+
 
 function App() {
   return (
@@ -29,9 +32,18 @@ function App() {
 
         <div className="big-products-container" style={{ display: "grid", gap: "1.5rem" }}>
           <SubHeader heading="Popular Restaurents" actionText="View all" />
-          <BigProductCard img="https://source.unsplash.com/featured/?pizza" heading="Minute by tuk tuk" store="Café" category="Western Food" />
-          <BigProductCard img="https://source.unsplash.com/featured/?brunch" heading="Café de Noir" store="Café" category="Western Food" />
-          <BigProductCard img="https://source.unsplash.com/featured/?bakery" heading="Bakes by Tella" store="Café" category="Western Food" />
+          <FullWidthImgSection img="https://source.unsplash.com/featured/?pizza" alt="pizza" heading="Minute by tuk tuk">
+            <Rating />
+            <ExtraInfo contentArray={ ["Café","Western Food"] } />
+          </FullWidthImgSection>
+          <FullWidthImgSection img="https://source.unsplash.com/featured/?brunch" alt="brunch" heading="Café de Noir">
+            <Rating />
+            <ExtraInfo contentArray={ ["Café","Western Food"] } />
+          </FullWidthImgSection>
+          <FullWidthImgSection img="https://source.unsplash.com/featured/?bakery" alt="bakery" heading="Bakes by Tella">
+            <Rating />
+            <ExtraInfo contentArray={ ["Café","Western Food"] } />
+          </FullWidthImgSection>
         </div>
 
         <SubHeader heading="Most Popular" actionText="View all" />
