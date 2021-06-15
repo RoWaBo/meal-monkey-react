@@ -1,0 +1,16 @@
+.spinner {
+    margin: 2rem auto;
+    width: 4rem;
+    height: 4rem;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: rgb(206, 206, 206) transparent rgb(206, 206, 206) rgb(206, 206, 206);
+    border-radius: 100%;
+    animation: spin 1s linear infinite ;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

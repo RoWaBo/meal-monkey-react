@@ -1,3 +1,4 @@
+import { Router } from "@reach/router"
 import CategoryCard from "./components/CategoryCard";
 import SwipableContainer from "./components/SwipableContainer";
 import Header from "./components/Header";
@@ -8,11 +9,16 @@ import MediumProductCard from "./components/MediumProductCard";
 import SmallProductCard from "./components/SmallProductCard";
 import Rating from "./components/Rating";
 import ExtraInfo from "./components/ExtraInfo";
+import Counter from "./components/Counter";
+import TheMeal from "./components/TheMeal";
+import Meals from "./components/Meals";
+
 
 function App() {
   return (
     <>
       <div className="wrapper">
+
         <Header userName="Akila!">
           <FaShoppingCart style={{ fontSize: "1.4rem" }} />
         </Header>
@@ -53,6 +59,12 @@ function App() {
           <SmallProductCard img="https://source.unsplash.com/featured/?italian,pizza" heading="Pizza Rush Hour" store="Café" category="Italian Food" />
         </div>
         
+        <Counter />
+        <Router>
+          <TheMeal path="/" />
+          <Meals path="/:category" />
+        </Router>
+         
       </div>
     </>
   );
