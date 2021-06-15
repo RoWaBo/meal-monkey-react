@@ -1,3 +1,4 @@
+import { Router } from "@reach/router"
 import CategoryCard from "./components/CategoryCard";
 import SwipableContainer from "./components/SwipableContainer";
 import Header from "./components/Header";
@@ -7,6 +8,8 @@ import BigProductCard from "./components/BigProductCard";
 import MediumProductCard from "./components/MediumProductCard";
 import SmallProductCard from "./components/SmallProductCard";
 import Counter from "./components/Counter";
+import TheMeal from "./components/TheMeal";
+import Meals from "./components/Meals";
 
 function App() {
   return (
@@ -45,7 +48,11 @@ function App() {
         </div>
         
         <Counter />
-          
+        <Router>
+          <TheMeal path="/" />
+          <Meals path="/:category" />
+        </Router>
+         
       </div>
     </>
   );
