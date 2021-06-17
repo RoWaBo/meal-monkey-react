@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
-      <GlobalStyle>
+      <GlobalStyle />
         <div className="wrapper">
 
           <Header userName="Akila!">
@@ -35,7 +35,7 @@ function App() {
           <CategoryCard imageUrl="https://source.unsplash.com/featured/?food,sri,lankan" heading="Sri Lankan" />
           <CategoryCard imageUrl="https://source.unsplash.com/featured/?food,italian" heading="Italian" />
           <CategoryCard imageUrl="https://source.unsplash.com/featured/?food,indonisian" heading="Indonisian" />
-        </SwipableContainer> */}
+          </SwipableContainer> */}
 
           <Router>
             <TheMeal path="/" />
@@ -78,7 +78,6 @@ function App() {
           <Counter />
 
         </div>
-      </GlobalStyle>
     </>
   );
 }
