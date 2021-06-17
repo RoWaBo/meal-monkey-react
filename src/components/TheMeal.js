@@ -2,6 +2,9 @@ import axios from "axios";
 import { Link } from "@reach/router";
 import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
+import SubHeader from "./SubHeader";
+import CategoryCard from "./CategoryCard";
+import SwipableContainer from "./SwipableContainer";
 
 const TheMeal = () => {
     const [loading, setLoading] = useState(true);
@@ -17,19 +20,18 @@ const TheMeal = () => {
     }, []);
 
     return loading ? <Spinner /> : (
-        <> 
-        <h3>The meal</h3>
-        <div>
+        <>
+        <SubHeader heading="The meal" actionText="View all"/>
+        <SwipableContainer>
             { categories.map(category => {
                 return (
                     <Link to={ `/${category.strCategory}` } key={ category.idCategory }>
-                        <p>{ category.strCategory }</p>
-                        <img src={ category.strCategoryThumb } alt={ category.strCategory } />
+                        <CategoryCard imageUrl={ category.strCategoryThumb } heading={ category.strCategory }/>
                     </Link>
                 )
                 })
             }    
-        </div>
+        </SwipableContainer>
         </>    
      );
 }
